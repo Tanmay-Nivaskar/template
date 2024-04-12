@@ -164,7 +164,7 @@ export default function reservationcard({price, villa_id}){
     console.log(booking)
       try {
           await fetch(
-              `http://localhost:3001/api/v1/booking?villaUID=${villa_id}`,
+              `https://pinestays.netlify.app/:3001/api/v1/booking?villaUID=${villa_id}`,
                 {
                   method: "POST",
                   headers: {
