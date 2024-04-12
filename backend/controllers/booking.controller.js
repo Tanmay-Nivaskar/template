@@ -17,7 +17,7 @@ exports.booking = async (req, res) => {
     const villaUID=req.query.villaUID;
     console.log({villaUID})
     // const userUID = '6592ec5e64879c5a1c5ca91e'
-    const response = await fetch("http://localhost:3001/api/v1/currentUser", {
+    const response = await fetch("https://pinestays.netlify.app/:3001/api/v1/currentUser", {
   headers: {
     Cookie: cookie // Pass the cookie in the request headers
   }
