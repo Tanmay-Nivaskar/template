@@ -27,7 +27,7 @@ export default async function Home(context) {
   console.log(query)
   console.log(query.discout)
   console.log(id)
-  const response = await fetch(`http://localhost:3001/api/v1/villa/displayVillaDetails?villaId=${id}`);
+  const response = await fetch(`https://pinestays.netlify.app/:3001/api/v1/villa/displayVillaDetails?villaId=${id}`);
     const res = await response.json();
     const data = res.data[0]
     console.log(data)
