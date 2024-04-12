@@ -6,7 +6,7 @@ import React from "react";
 export default async function Home(context) {
 
   const MemoizedListingCard = React.memo(Listingcard);
-  const response = await fetch("http://localhost:3001/api/v1/villa/display");
+  const response = await fetch("https://pinestays.netlify.app/:3001/api/v1/villa/display");
     const res = await response.json();
     const data = res.data
     console.log(data)
